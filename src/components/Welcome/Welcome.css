@@ -1,0 +1,25 @@
+h3 {
+    margin-top: 5%;
+}
+
+.container {
+    animation: 1s linear 2s slideup;
+    }
+    
+    @keyframes slideup {
+        0% {
+            opacity: 100%;
+            transform: translateY(1000%);
+        }
+        100% {
+            opacity: 100%;
+            transform: translateY(-100);
+        }
+    }
+    
+.welcome_photo {
+    height: 500px;
+    width: 500px;
+    margin-top: 7%;
+    margin-left: 28%;
+}

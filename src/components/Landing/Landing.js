@@ -1,10 +1,13 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
+import Welcome from '../Welcome/Welcome';
+import './Landing.css';
 
-const landing = ( props ) => {
+const landing = () => {
     return (
         <div>
-           <Navbar></Navbar>
+            <Navbar></Navbar>
+            <Welcome className='welcome' ></Welcome>
         </div>
     );
 };
