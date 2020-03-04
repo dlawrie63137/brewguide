@@ -6,8 +6,13 @@ import '../Welcome/Welcome.css';
 const main = () => {
     return (
        <div className="container">
-            <h3>MongoByte's Guide to U.S. Breweries</h3>
-             <img className='welcome_photo' src={ Photo } alt='' />
+            <h2>MongoByte's Guide to U.S. Breweries</h2>
+            <img 
+                className='welcome_photo' 
+                src={ Photo } 
+                alt='people drinking beer' 
+            />
+            <caption>Photo by Eugen Buzuk from Pexels</caption>
         </div>
     );
 };
