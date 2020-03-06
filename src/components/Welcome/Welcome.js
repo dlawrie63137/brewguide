@@ -6,7 +6,7 @@ import '../Welcome/Welcome.css';
 const main = () => {
     return (
        <div className="container">
-            <h2>MongoByte's Guide to U.S. Breweries</h2>
+            <h2>MongoByte Brewery Guide</h2>
             <img 
                 className='welcome_photo' 
                 src={ Photo } 

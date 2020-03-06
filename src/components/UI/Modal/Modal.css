@@ -1,0 +1,20 @@
+h3 {
+    font: Arial;
+    margin-top: 5%;
+}
+
+.showModal {
+    background-color: azure;
+    height: 200px;
+    width: 500px;
+    position: fixed;
+    z-index: 2;
+    bottom: 40%;
+    left: 36.59%;
+ }
+
+ .yes {
+     font: Arial;
+     margin-right: 20%;
+     margin-top: 15%;
+ }
