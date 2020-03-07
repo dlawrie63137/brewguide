@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Navbar from '../Navbar/Navbar';
 import Welcome from '../Welcome/Welcome';
 import './Landing.css';
 import Modal from '../UI/Modal/Modal';
 
-const landing = () => {
+class Landing extends Component {
 
-    return (
-        <div>
-            <Navbar></Navbar>
-            <Welcome className='welcome' ></Welcome>
-            <Modal></Modal>
-        </div>
-    );
+    render() {
+        return (
+            <div>
+                <Navbar></Navbar>
+                <Welcome className='welcome' ></Welcome>
+                <Modal></Modal>
+            </div>
+        )
+    };
 };
 
-export default landing;
+export default Landing;

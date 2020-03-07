@@ -3,14 +3,27 @@ h3 {
     margin-top: 5%;
 }
 
+button {
+    border-color: dodgerblue;
+    border-style: groove;
+}
+
 .showModal {
+    animation-name: fadeModal;
+    animation-duration: 1s;
     background-color: azure;
-    height: 200px;
-    width: 500px;
+    border-color: dodgerblue;
+    border-style: ridge;
+    height: 150px;
+    width: 300px;
     position: fixed;
     z-index: 2;
     bottom: 40%;
-    left: 36.59%;
+    left: 42%;
+ }
+ @keyframes fadeModal {
+    from {opacity: 1%}
+    to {opacity: 100%}
  }
 
  .yes {
