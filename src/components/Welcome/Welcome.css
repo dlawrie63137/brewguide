@@ -22,10 +22,16 @@ h2 {
     to {margin-top: 3%;}
 }
 
+.foot {
+    font: Arial;
+    margin-left: 10%;
+    margin-top: 6%;;
+}
+
 .welcome_photo {
     height: 500px;
     width: 500px;
-    margin-top: 4%;
+    margin-top: 8%;
     margin-left: 26%;
     padding-left: 0%;
 

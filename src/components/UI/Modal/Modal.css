@@ -23,7 +23,7 @@ button {
     width: 350px;
     position: fixed;
     z-index: 2;
-    bottom: 40%;
+    bottom: 37%;
     left: 41%;
  }
  @keyframes fadeModal {
