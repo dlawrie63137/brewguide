@@ -15,6 +15,10 @@
     font: Arial;
 }
 
+.contactGreet {
+    text-decoration-line: underline;
+}
+
 .contactInfo {
     margin-left: 55%;
 }
@@ -24,11 +28,16 @@
     margin-top: 15%;
 }
 
+.emailAddress {
+    display: inline-flex;
+}
+
 .mailForm {
     margin-top: 20%;
 }
 .mailto {
     margin-left: -20%;
+    text-decoration-line: underline;
 }
 
 .name {

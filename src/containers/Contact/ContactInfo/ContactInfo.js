@@ -10,7 +10,7 @@ const contactInfo = () => {
                 <h3 className='contactGreet'>Contact MongoByte</h3>
             </div>
             <div className='contactInfo'>
-                <h5 className='email'>Email:<Link to='mailto:admin@mongobyte.com'> admin@mongobyte.com</Link></h5>
+                <h5 className='email'><u>Email:</u><Link to='mailto:admin@mongobyte.com'> admin@mongobyte.com</Link></h5>
                 <div className='streetAddress'>
                     <h5 className='mailto'>Send mail to:</h5>
                     <h5 className='name'>MongoByte</h5> 
