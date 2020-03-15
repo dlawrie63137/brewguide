@@ -1,0 +1,45 @@
+.address1 {
+    margin-left: 5%;
+}
+
+.address2 {
+    margin-left: -1%;
+}
+
+.choice {
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+.container {
+    font: Arial;
+}
+
+.contactInfo {
+    margin-left: 55%;
+}
+
+.email {
+    margin-left: -20%;
+    margin-top: 15%;
+}
+
+.mailForm {
+    margin-top: 20%;
+}
+.mailto {
+    margin-left: -20%;
+}
+
+.name {
+    margin-left: 5.5%;
+}
+
+.streetAddress {
+    margin-left: 0%;
+    margin-top: 8%;
+}
+
+.contactGreet {
+    margin-left: 50%;
+}

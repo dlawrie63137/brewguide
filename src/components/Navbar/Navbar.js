@@ -14,7 +14,7 @@ const navbar = (props) => {
                         <ul className="nav_ul">
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='find'>Find a Brewery</Link></li>
-                            <li><Link to='/about'>About MongoByte</Link></li>
+                            <li><Link to='/about'>About This Project</Link></li>
                             <li><Link to='/contact'>Contact Us</Link></li>
                         </ul> 
                 </nav>

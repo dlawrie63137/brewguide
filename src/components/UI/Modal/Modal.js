@@ -16,7 +16,7 @@ class Modal extends Component {
             return (
                <div className='showModal'>
                    <h6 className='errorMessage'>{this.props.modalErrorMsg}</h6> 
-                   <h3>Are You 21 or Older?</h3>
+                   <h3 className='modalGreet'>Are You 21 or Older?</h3>
                    <button className='yes' onClick={this.props.yesClicked}>YES</button>
                    <button className='no' onClick={this.props.noClicked}>NO</button>
                 </div>  
@@ -26,7 +26,7 @@ class Modal extends Component {
         if(this.props.showModal) {
             return (
                <div className='showModal'>
-                   <h3>Are You 21 or Older?</h3>
+                   <h3 className='modalGreet'>Are You 21 or Older?</h3>
                    <button className='yes' onClick={this.props.yesClicked}>YES</button>
                    <button className='no' onClick={this.props.noClicked}>NO</button>
                 </div>  
