@@ -1,16 +1,29 @@
 h3 {
     font: Arial;
+    margin-bottom: 0%;
+    margin-left: 10%;
     margin-top: 8%;
 }
 h6 {
     color: red;
     font: Arial;
+    margin-left: 15%;
     margin-top: 6%;
 }
-
-button {
+.no {
     border-color: dodgerblue;
     border-style: groove;
+    margin-left: 10%;
+    margin-right: 20%;
+    margin-top: 15%;
+}
+
+.yes {
+    border-color: dodgerblue;
+    border-style: groove;
+    margin-left: 20%;
+    margin-right: 8%;
+    padding-top: 0%;
 }
 
 .showModal {

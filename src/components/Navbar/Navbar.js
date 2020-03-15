@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-import mblogo from '../../assets/img/mblogo_long_wd.png';
+import logo from '../../assets/img/mblogo_long_wd.png';
 
 const navbar = (props) => {
 
@@ -8,14 +9,16 @@ const navbar = (props) => {
         return (
             <div className='nav_nav'>
                 <nav className="navbar navbar-light bg-light">
-                    <a href='http://www.mongobyte.com'>
-                    <img src={ mblogo }  className="d-inline-block align-top" alt=""></img></a>
+                    <Link to='http://www.mongobyte.com'>
+                    <img src={logo}  className="d-inline-block align-top" alt=""></img></Link>
                         <ul className="nav_ul">
-                            <li><a href='#'>Find a Brewery</a></li>
-                            <li><a href='#'>About MongoByte</a></li>
-                            <li><a href='#'>Contact Us</a></li>
+                            <li><Link to='/'>Home</Link></li>
+                            <li><Link to='find'>Find a Brewery</Link></li>
+                            <li><Link to='/about'>About MongoByte</Link></li>
+                            <li><Link to='/contact'>Contact Us</Link></li>
                         </ul> 
                 </nav>
+                
             </div>
         );
     };
@@ -23,8 +26,9 @@ const navbar = (props) => {
         return (
             <div className='nav_nav'>
                 <nav className="navbar navbar-light bg-light">
-                    <img src={ mblogo }  className="d-inline-block align-top" alt="" />
+                    <img src={logo}  className="d-inline-block align-top" alt="" />
                     <ul className="nav_ul">
+                        <li>Home</li>
                         <li>Find a Brewery</li>
                         <li>About MongoByte</li>
                         <li>Contact Us</li>

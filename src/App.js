@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Landing from './containers/Landing/Landing';
+import Contact from './containers/Contact/Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <Landing></Landing>
-    </div>
-  );
-}
+class App extends Component {
+
+  render() {
+    return (
+      <BrowserRouter>
+        <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route path="/contact" component={Contact} />
+        </Switch>
+    </BrowserRouter>
+    );
+  };
+};
 
 export default App;

@@ -5,8 +5,9 @@ const foot = () => {
 
     return (
         <div className='foot'>
-            © 2020 MongoByte<br></br>
-            St. Louis, Mo
+            <h6 className='foot'>© 2020 MongoByte</h6>
+            <h6 className='foot2'>St. Louis, MO</h6>
+            
         </div>
     );
 };

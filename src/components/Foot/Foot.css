@@ -1,5 +1,13 @@
 .foot {
     font: Arial;
-    margin-left: 10%;
-    margin-top: 6%;;
+    color: black;
+    margin-left: 28%;
+    margin-top: 3%;;
+}
+
+.foot2 {
+    font: Arial;
+    color: black;
+    margin-left: 32%;
+    margin-top: 0%;;
 }
