@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from '../Navbar/Navbar';
-import Welcome from '../Welcome/Welcome';
+import Navbar from '../../components/Navbar/Navbar';
+import Welcome from '../../components/Welcome/Welcome';
 import './Landing.css';
-import Modal from '../UI/Modal/Modal';
+import Modal from '../../components/UI/Modal/Modal';
 
 class Landing extends Component {
     constructor (props) {

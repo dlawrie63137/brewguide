@@ -23,14 +23,12 @@ const navbar = (props) => {
         return (
             <div className='nav_nav'>
                 <nav className="navbar navbar-light bg-light">
-                  {/* <a className="navbar-brand" href="#"> */}
-                     <img src={ mblogo }  className="d-inline-block align-top" alt="" />
-                        <ul className="nav_ul">
-                            <li>Find a Brewery</li>
-                            <li>About MongoByte</li>
-                            <li>Contact Us</li>
-                        </ul> 
-                  {/*  </a> */}
+                    <img src={ mblogo }  className="d-inline-block align-top" alt="" />
+                    <ul className="nav_ul">
+                        <li>Find a Brewery</li>
+                        <li>About MongoByte</li>
+                        <li>Contact Us</li>
+                    </ul> 
                 </nav>
             </div>
         );

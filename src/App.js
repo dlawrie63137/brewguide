@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Landing from './components/Landing/Landing';
+import Landing from './containers/Landing/Landing';
 
 function App() {
   return (

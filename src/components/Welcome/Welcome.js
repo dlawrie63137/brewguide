@@ -1,6 +1,7 @@
 import React from 'react';
 import Photo from '../../assets/img/people-having-a-drink-3641322.png'
 import '../Welcome/Welcome.css';
+import Foot from '../Foot/Foot';
 
 
 const Welcome = () => {
@@ -13,11 +14,9 @@ const Welcome = () => {
                 alt='people drinking beer' 
             />
             <caption>Photo by Eugen Buzuk from Pexels</caption>
-            <div className='foot'>
-                © 2020 MongoByte<br></br>
-                St. Louis, Mo
-            </div>
+            <Foot></Foot>
         </div>
+        
     );
 };
 
