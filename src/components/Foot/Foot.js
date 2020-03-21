@@ -5,8 +5,8 @@ const foot = () => {
 
     return (
         <div className='foot'>
-            <h6 className='foot'>© 2020 MongoByte</h6>
-            <h6 className='foot2'>St. Louis, MO</h6>
+            <h6 className='foot-top'>© 2020 MongoByte</h6>
+            <h6 className='foot-bottom'>St. Louis, MO</h6>
             
         </div>
     );

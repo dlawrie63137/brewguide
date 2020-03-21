@@ -1,24 +1,24 @@
 caption {
     display: inline-block;
-    margin-bottom: 0%;
-    margin-left: 42%;
+    margin-bottom: 2%;
+    margin-left: 22%;
     margin-top: 2%;
 }
 
 h2 {
     font: Arial;
-    margin-left: 25%;
     margin-top: 5%;
-    padding-left: 7%;
+    padding-left: 10%;
 }
 
-.container {
+.welcome-div {
     animation-name: slideup;
     animation-duration: 3s;
     animation-timing-function: ease;
-    margin-left: 11%;
+    margin-left: 8%;
     margin-top: 3%;
     padding-left: 14%;
+    z-index: 3;
 }
 @keyframes slideup {
     from {margin-top: 100%;}
@@ -28,8 +28,6 @@ h2 {
 .welcome_photo {
     height: 500px;
     width: 500px;
+    margin-left: 5%;
     margin-top: 8%;
-    margin-left: 26%;
-    padding-left: 0%;
-
 }

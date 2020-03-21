@@ -1,13 +1,20 @@
-.foot {
-    font: Arial;
-    color: black;
-    margin-left: 28%;
-    margin-top: 3%;;
+h6 {
+    text-align: center;
 }
 
-.foot2 {
+.foot {
+    margin-bottom: 0%;
+    margin-left: -15%;
+}
+
+.foot-top {
     font: Arial;
     color: black;
-    margin-left: 32%;
+    margin-top: 1%;;
+}
+
+.foot-bottom {
+    font: Arial;
+    color: black;
     margin-top: 0%;;
 }

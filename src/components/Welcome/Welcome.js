@@ -7,13 +7,15 @@ import Foot from '../Foot/Foot';
 const Welcome = () => {
     return (
        <div className="container">
-            <h2>MongoByte Brewery Guide</h2>
-            <img 
-                className='welcome_photo' 
-                src={ Photo } 
-                alt='people drinking beer' 
-            />
-            <caption>Photo by Eugen Buzuk from Pexels</caption>
+            <div className='welcome-div'>
+                <h2>MongoByte Brewery Guide</h2>
+                <img 
+                    className='welcome_photo' 
+                    src={ Photo } 
+                    alt='people drinking beer' 
+                />
+                <caption>Photo by Eugen Buzuk from Pexels</caption>
+            </div>
             <Foot></Foot>
         </div>
         
