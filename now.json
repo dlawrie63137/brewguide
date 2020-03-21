@@ -3,7 +3,7 @@
   "name": "brewguide",
   "builds": [
       { "src": "package.json", "use": "@now/static-build" },
-      { "src": "index.js", "use": "@now/node-server"}
+      { "src": "./src/Server/Server.js", "use": "@now/node-server"}
   ],
   "routes": [
       {"src": "^/static/(.*)", "dest": "/static/$1"},
