@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ContactInfo.css';
-import ContactForm from '../ContactForm/ContactForm';
-import '../ContactForm/ContactForm.css';
+
 
 const contactInfo = () => {
 
@@ -21,13 +20,10 @@ const contactInfo = () => {
                         <h5 className='address2'>St. Louis, MO 63137</h5>
                     </div>
                 </div>
-                    <div className='choice'>
-                        <h4 className='choose'>Or you can just fill out the form below:</h4>
-                   </div>
-                   <div>
-                       <ContactForm></ContactForm>
-                   </div>
-               </div>
+                <div className='choice'>
+                    <h4 className='choose'>Or you can just fill out the form below:</h4>
+                </div>
+            </div>
         </div>
     );
 };
