@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './ContactForm.css';
 
 class contactForm extends Component  {
@@ -6,11 +7,44 @@ class contactForm extends Component  {
     constructor(props) {
         super(props);
         this.state = {
-          name: '',
-          email: '',
-          message: ''
+            name: '',
+            message: '',
+            email: '',
+            sent: false,
+            buttonText: 'Send Message'
         }
       }
+
+      handleSubmit(e){
+        e.preventDefault()
+
+        this.setState({
+           buttonText: '...sending'
+  })
+
+  let data = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
+  }
+  
+  axios.post('API_URI', data)
+  .then( res => {
+      this.setState({ sent: true }, this.resetForm())
+  })
+  .catch( () => {
+    console.log('Message not sent')
+  })
+}
+
+resetForm = () => {
+  this.setState({
+      name: '',
+      message: '',
+      email: '',
+      buttonText: 'Message Sent'
+  })
+}
     
     render() {
      return(
@@ -26,7 +60,7 @@ class contactForm extends Component  {
                 <label htmlFor="message">Message:</label>
                 <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </div>
-            <button type="submit" className="btn">Submit</button>
+            <button type="submit" className="btn btn-primary">Submit</button>
             </form>
         </div>
      );
@@ -43,9 +77,6 @@ class contactForm extends Component  {
       onMessageChange(event) {
         this.setState({message: event.target.value})
       }
-    
-    handleSubmit(event) {
-    }
-    }
+  };
     
 export default contactForm;
