@@ -17,11 +17,11 @@ app.listen(port, () => {
 });
 
 
-app.get('../containers/Contact/Contact.js', (req, res) => {
+app.get('../containers/Contact/ContactForm/ContactForm.js', (req, res) => {
   res.send('Welcome to my api');
 })
 
-app.post('/api/v1', (req,res) => {
+app.post('API_URI', (req,res) => {
   var data = req.body;
 
 var smtpTransport = nodemailer.createTransport({
