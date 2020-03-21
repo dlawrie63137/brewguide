@@ -13,7 +13,7 @@
       {"src": "^/service-worker.js", "headers": {"cache-control": "s-maxage=0"}, "dest": "/service-worker.js"},
       {"src": "^/precache-manifest.(.*)", "dest": "/precache-manifest.$1"},
       {"src": "^/(.*)", "dest": "/index.html"},
-      { "src": "/(.*)", "dest": "app.js"}
+      { "src": "/(.*)", "dest": "./src/containers/Contact/ContactForm/ContactForm.js"}
   ]
 }
 
