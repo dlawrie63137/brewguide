@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "name": "create-react-app",
+  "name": "brewguide",
   "builds": [
       { "src": "package.json", "use": "@now/static-build" }
+      { "src": "index.js", "use": "@now/node-server"}
   ],
   "routes": [
       {"src": "^/static/(.*)", "dest": "/static/$1"},
@@ -12,16 +13,7 @@
       {"src": "^/service-worker.js", "headers": {"cache-control": "s-maxage=0"}, "dest": "/service-worker.js"},
       {"src": "^/precache-manifest.(.*)", "dest": "/precache-manifest.$1"},
       {"src": "^/(.*)", "dest": "/index.html"}
+      { "src": "/(.*)", "dest": "./src/Server/Server.js"}
   ]
 }
 
-{
-  "version": 1,
-  "name": "nodejs-express",
-  "builds": [
-    { "src": "index.js", "use": "@now/node-server"}
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "./src/Server/Server.js"}
-  ]
-}
