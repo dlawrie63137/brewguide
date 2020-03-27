@@ -21,7 +21,7 @@ const contactInfo = () => {
                     </div>
                 </div>
                 <div className='choice'>
-                    <h4 className='choose'>Or you can just fill out the form below:</h4>
+                    <h4 className='choose'>Or just fill out the form below:</h4>
                 </div>
             </div>
         </div>
