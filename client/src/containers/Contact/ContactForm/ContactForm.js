@@ -10,42 +10,10 @@ class contactForm extends Component  {
             name: '',
             message: '',
             email: '',
-            sent: false,
             buttonText: 'Send Message'
         }
       }
 
-      handleSubmit(e){
-        e.preventDefault()
-
-        this.setState({
-           buttonText: '...sending'
-  })
-
-  let data = {
-      name: this.state.name,
-      email: this.state.email,
-      message: this.state.message
-  }
-  
-  axios.post('API_URI', data)
-  .then( res => {
-      this.setState({ sent: true }, this.resetForm())
-  })
-  .catch( () => {
-    console.log('Message not sent')
-  })
-}
-
-resetForm = () => {
-  this.setState({
-      name: '',
-      message: '',
-      email: '',
-      buttonText: 'Message Sent'
-  })
-}
-    
     render() {
      return(
        <div className="contact">
@@ -57,10 +25,13 @@ resetForm = () => {
                 <input type="email" className="form-control" placeholder='Email Address' aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
             </div>
             <div className="form-group">
-                <label htmlFor="message">Message:</label>
-                <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                <textarea 
+                    className="form-control" 
+                    rows="5" value={this.state.message} 
+                    onChange={this.onMessageChange.bind(this)}
+                    placeholder="Write Your Message Here" />
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary">{this.state.buttonText}</button>
             </form>
         </div>
      );
@@ -77,6 +48,36 @@ resetForm = () => {
       onMessageChange(event) {
         this.setState({message: event.target.value})
       }
-  };
+
+      handleSubmit(e){
+        e.preventDefault();
+        this.setState({buttonText: '... Sending'})
+        
+    axios({
+      method: "POST", 
+      url:"http://localhost:3002/send", 
+      data:  this.state
+    }).then((response)=>{
+      if (response.data.status === 'success'){
+        alert("Message Sent."); 
+        this.resetForm()
+      }else if(response.data.status === 'fail'){
+        alert("Message failed to send.")
+      }
+    })
+  }
+
+        
+  resetForm(){
+    
+    this.setState({
+      name: "", 
+      email: '', 
+      message: '',
+      buttonText: 'Send Message'
+    })
+ }
+};
+
     
 export default contactForm;
